@@ -1,4 +1,5 @@
- import Conversations from "./Conversations";
+ import BgButton from "./BgButton";
+import Conversations from "./Conversations";
  import LogoutButton from "./LogoutButton";
  import SearchInput from "./SearchInput";
 
@@ -8,7 +9,10 @@
  			<SearchInput />
  			<div className='divider px-3'></div>
  			<Conversations />
- 			<LogoutButton />
+ 			<div className="flex gap-5">
+			 <LogoutButton />
+			 <BgButton />
+			</div>
  		</div>
  	);
  };
