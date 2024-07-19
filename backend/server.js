@@ -18,7 +18,7 @@ const __dirname = path.resolve();
 dotenv.config();
 
 // middlewares
-app.use(express.static(__dirname, "/frontend/dist"))
+app.use(express.static(path.join(__dirname, "/frontend/dist")))
 app.use(express.json()); // to parse the incoming requests with JSON payloads (from req.body) for POST and PUT requests
 app.use(cookieParser());
 
